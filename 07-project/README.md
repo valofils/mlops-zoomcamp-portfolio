@@ -1,49 +1,36 @@
-# Module 7: Final Project
+# Capstone: House Price Prediction
 
-## Overview
+End-to-end MLOps project predicting residential property sale prices
+using the Ames Housing dataset (1,460 properties, 80 features).
 
-End-to-end MLOps project integrating all course concepts.
-Dataset TBD — will use a more distinctive problem domain than the Taxi dataset.
+## Problem Statement
 
-## Checklist
+Predict the sale price of a residential property given structural,
+locational, and quality features. Accurate price estimates support
+real estate valuation, mortgage underwriting, and investment decisions.
 
-### Problem description
-- [ ] Problem clearly described, solution is valuable
+## Dataset
 
-### Experiment tracking & model registry
-- [ ] MLflow used for experiment tracking
-- [ ] Models registered in a model registry
+- Source: Ames Housing (OpenML)
+- Size: 1,460 rows x 81 columns
+- Target: SalePrice (continuous, USD)
+- Features: 79 predictors covering lot size, neighborhood,
+  building type, quality ratings, year built, and more
 
-### Workflow orchestration
-- [ ] Fully deployed orchestration pipeline
+## MLOps Stack
 
-### Model deployment
-- [ ] Model deployed as web service, streaming, or batch
+| Layer | Tool |
+|-------|------|
+| Experiment tracking | MLflow |
+| Orchestration | Prefect |
+| Deployment | Flask REST API |
+| Monitoring | Evidently |
+| Testing | pytest |
+| CI/CD | GitHub Actions |
 
-### Model monitoring
-- [ ] Dashboard for monitoring model performance
+## Quick Start
 
-### Reproducibility
-- [ ] Clear setup instructions, dependencies pinned, data obtainable
-
-### Best practices
-- [ ] Unit tests
-- [ ] Integration test
-- [ ] Linter and/or formatter
-- [ ] Makefile
-- [ ] Pre-commit hooks
-- [ ] CI/CD pipeline
-
-## Structure
-
-| Folder | Contents |
-|--------|----------|
-| `src/` | Source code — training, prediction, utils |
-| `notebooks/` | EDA and experimentation |
-| `data/` | Processed data (raw excluded via .gitignore) |
-| `tests/` | Unit and integration tests |
-| `infrastructure/` | Terraform and Docker configs |
-
-## Notes & Learnings
-
-_Add your notes here as you work through the project._
+    pip install -r requirements.txt
+    python 07-project/src/train.py
+    python 07-project/src/predict_api.py
+    pytest 07-project/tests/ -v
