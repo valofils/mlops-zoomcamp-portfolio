@@ -8,13 +8,13 @@ Each module introduces a new layer of the ML production stack.
 
 | Module | Topic | Tools | Status |
 |--------|-------|-------|--------|
-| [01-intro](./01-intro/) | ML in production, environment setup | Python, Docker | 🔄 In progress |
-| [02-experiment-tracking](./02-experiment-tracking/) | Experiment tracking & model registry | MLflow | ⏳ Upcoming |
-| [03-orchestration](./03-orchestration/) | ML pipelines & workflow orchestration | Prefect | ⏳ Upcoming |
-| [04-deployment](./04-deployment/) | Web service, streaming & batch deployment | Flask, AWS | ⏳ Upcoming |
-| [05-monitoring](./05-monitoring/) | Model & data drift monitoring | Evidently, Grafana | ⏳ Upcoming |
-| [06-best-practices](./06-best-practices/) | Testing, CI/CD, IaC | pytest, GitHub Actions, Terraform | ⏳ Upcoming |
-| [07-project](./07-project/) | End-to-end capstone project | All of the above | ⏳ Upcoming |
+| [01-intro](./01-intro/) | ML in production, environment setup | Python, Docker | ✅ Done |
+| [02-experiment-tracking](./02-experiment-tracking/) | Experiment tracking & model registry | MLflow | ✅ Done |
+| [03-orchestration](./03-orchestration/) | ML pipelines & workflow orchestration | Prefect | ✅ Done |
+| [04-deployment](./04-deployment/) | Web service, streaming & batch deployment | Flask, AWS | ✅ Done |
+| [05-monitoring](./05-monitoring/) | Model & data drift monitoring | Evidently, Grafana | ✅ Done |
+| [06-best-practices](./06-best-practices/) | Testing, CI/CD, IaC | pytest, GitHub Actions, Terraform | ✅ Done |
+| [07-project](./07-project/) | End-to-end capstone project | All of the above | ✅ Done |
 
 ## Stack
 
