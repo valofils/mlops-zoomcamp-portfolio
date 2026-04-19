@@ -49,3 +49,4 @@ Thumbs.db
 
 # Prefect
 .prefect/
+*.db
