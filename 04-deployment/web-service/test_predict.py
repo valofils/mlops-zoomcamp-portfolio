@@ -2,6 +2,7 @@
 Smoke test — run this while the Flask server is running.
 Usage: python test_predict.py
 """
+
 import json
 
 import requests

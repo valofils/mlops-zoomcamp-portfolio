@@ -1,4 +1,5 @@
 """Centralised config for the house price capstone project."""
+
 import os
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
